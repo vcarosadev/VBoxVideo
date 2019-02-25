@@ -1,12 +1,13 @@
 # VirtualBox Video Driver for NEXTSTEP 3.3 and Rhapsody Developer Release 2
 
-The code provided here can be distributed according to GNU Public License v3 (GPLv3), see the full license [here](/COPYNG).
+The code provided here can be distributed according to GNU Public License v3 (GPLv3), see the full license [here](/COPYING).
 
 ## Overview
 
 VBoxVideo is a video driver for **Oracle VirtualBox** virtual machines with **NEXTSTEP 3.3** or **Rhapsody Developer Release 2** operating systems.
 
-The driver has been tested on VirtualBox 5 on a Windows 7 host and VirtualBox Version 6 on a Windows 10 host with both NEXTSTEP 3.3 and Rhapsody Developer Release 2.
+The driver has been tested on VirtualBox Version 5 on a Windows 7 host and VirtualBox Version 6 on a Windows 10 host with both NEXTSTEP 3.3 and Rhapsody Developer Release 2.
+
 For more details about these operating systems and the implementation of the video driver please refer to the wiki page.
 
 ## Building the driver
@@ -88,7 +89,9 @@ This table shows the video modes supported by the VBoxVideo driver (default in _
 
 ## Known Issues
 
-Sometimes there is a failure when calling an OS function that should update the memory ranges used by the video adapter (this happens in both NEXTSTEP and Rhapsody). As a result of this failure it's impossible to map the correct range into the OS memory space. For VirtualBox version 5 and 6 this isn't a blocking issue because the video frame buffer always starts at the fixed address `0xE0000000`. If in future releases of VirutlBox the frame buffer is dynamically set during the virtual machine startup the driver may not work anymore if the OS call fails. Find more details on this issue in the wiki.
+Sometimes there is a failure when calling an OS function that should update the memory ranges used by the video adapter (this happens in both NEXTSTEP and Rhapsody). As a result of this failure it's impossible to map the correct range into the OS memory space.
+
+For VirtualBox version 5 and 6 this isn't a blocking issue because the video frame buffer always starts at the fixed address `0xE0000000`. If in future releases of VirtualBox the frame buffer is dynamically set during the virtual machine startup the driver may not work anymore if the OS call fails.
 
 ## Acknowledgments
 
@@ -96,6 +99,6 @@ I would like to thank you the following people:
 
 * Jason at "[Stuff Jason Does](http://stuffjasondoes.com/)" for [this tutorial](http://stuffjasondoes.com/2018/07/25/installing-nextstep-os-openstep-on-virtualbox-in-2018/) on how to install OpenStep. This project started after playing with the OS installations
 * neozeed at "[Virtually Fun](https://virtuallyfun.com/wordpress/)" for the various articles on NEXTSTEP, Rhapsody, Darwin and OpenStep
-* David Crosby (crosby@atomicobject.com) and Bill Bereza (bereza@atomicobject.com) and their project [VMwareFB_OpenStep](https://github.com/atomicobject/VMWareFB_OpenStep), a video driver for VMWare. Their work has been a great source of tips on how to write a driver for OPENSTEP/NEXTSTEP.
+* David Crosby (crosby@atomicobject.com) and Bill Bereza (bereza@atomicobject.com) and their project [VMwareFB_OpenStep](https://github.com/atomicobject/VMWareFB_OpenStep), a video driver for VMWare. Their work has been a great source of tips on how to write a driver for OPENSTEP/NEXTSTEP
 * the people at "[NeXT Computers](http://www.nextcomputers.org/)" that made available a lot of files and documentation about the NeXT Computer and the related Operating Systems
 * the people at "[WinWorld](https://winworldpc.com/home)" a treasure chest of ancient software including Rhapsody Developer Release 2 for Intel
