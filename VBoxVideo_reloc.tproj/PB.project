@@ -1,0 +1,16 @@
+FILESTABLE = {
+    OTHER_SOURCES = (Makefile.preamble, Makefile, Makefile.postamble, Makefile.driver_preamble, Load_Commands.sect);
+    H_FILES = (VBoxVideo.h, VBoxDefines.h, VBoxModes.h);
+    OTHER_LINKED = ();
+    CLASSES = (VBoxVideo.m, VBoxVideoAdapter.m);
+    C_FILES = ();
+};
+LOCALIZABLE_FILES = {
+};
+LANGUAGE = English;
+PROJECTVERSION = 1.1;
+INSTALLDIR = "";
+PROJECTNAME = VBoxVideo_reloc;
+PROJECTTYPE = Tool;
+GENERATEMAIN = YES;
+DOCICONFILES = ();

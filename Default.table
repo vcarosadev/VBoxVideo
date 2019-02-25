@@ -1,0 +1,13 @@
+"Title" = "VirtualBox Video Adapter";
+"Bus Type" = "PCI";
+"Family" = "Display";
+"Version" = "1.00";
+"Auto Detect IDs" = "0xbeef80ee";
+"Instance" = "0";
+"Driver Name" = "VBoxVideo";
+"DMA Channels" = "";
+"IRQ Levels" = "";
+"I/O Ports" = "0x01Ce-0x01Cf ";
+"Memory Maps" = "0xe0000000-0xe07fffff 0xa0000-0xbffff 0xc0000-0xcffff";
+"VGA Memory Maps" = "0xa0000-0xbffff 0xc0000-0xcffff";
+"Display Mode" = "Height: 768 Width: 1024 Refresh: 60Hz ColorSpace: RGB:888/32";
