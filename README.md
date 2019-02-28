@@ -61,7 +61,7 @@ In an existing installation follow these steps:
 8. Click on the _Video_ icon and delete the currently installed driver by clicking the _Remove_ button
 9. Click on the _Add_ button, the _Configure_ App should suggest the installation of the _VirtualBox Video Adapter_ driver, click _Add_
 10. You can select the preferred video mode by clicking the _Select..._ button
-11. Once completed, click _Done_ then _Save_. Close the _Confgiure_ App by clicking on _Quit_
+11. Once completed, click _Done_ then _Save_. Close the _Configure_ App by clicking on _Quit_
 12. Remove the CD-ROM by selecting _Tools_ -> _Eject_ in the _Workspace Manager_ menu
 13. Restart the operating system
 
