@@ -31,7 +31,7 @@ In an existing installation follow these steps:
 3. Double click on the Floppy named _VBoxVideo_, you can find the driver at the following path: `private\Drivers\i386`
 4. Copy the folder `VBoxVideo.config` from the floppy disk to the `me` folder
 5. Double click on `VBoxVideo.config` in the `me` folder, the _Configure_ App will open and a message will inform you of the correct installation
-6. Click on the _Video_ button and delete the currently installed driver by clicking the _Remove_ button
+6. Click on the _Video_ icon and delete the currently installed driver by clicking the _Remove_ button
 7. Click on the _Add_ button, the _Configure_ App should suggest the installation of the _VirtualBox Video Adapter_ driver, click _Add_
 8. You can select the preferred video mode by clicking the _Select..._ button
 9. Once completed, click _Done_ then _Save_
@@ -53,14 +53,17 @@ In an existing installation follow these steps:
 
 1. Mount in the virtual machine CD driver the disk image file [`VBoxVideoDriver.iso`](/build/VBoxVideoDriver.iso) you can find in the `build` folder
 2. Double click on the CD-ROM named _VBoxVideoDriver_, you can find the driver in the root folder
-3. Copy the folder `VBoxVideo.config` from the CD-ROM to the user folder
-4. Double click on `VBoxVideo.config` in the user folder, the _Configure_ App will open and a message will inform you of the correct installation
-5. Click on the _Video_ button and delete the currently installed driver by clicking the _Remove_ button
-6. Click on the _Add_ button, the _Configure_ App should suggest the installation of the _VirtualBox Video Adapter_ driver, click _Add_
-7. You can select the preferred video mode by clicking the _Select..._ button
-8. Once completed, click _Done_ then _Save_
-9. Remove the CD-ROM by selecting _Tools_ -> _Eject_ in the _Workspace Manager_ menu
-10. Restart the operating system
+3. Copy the file `VBoxVideo.config.tar` from the CD-ROM to the user folder
+4. Double click on `VBoxVideo.config.tar` in the user folder, click _Unarchive_ to extract the folder `VBoxVideo.config` from the archive
+5. Once the unarchive operation has finished double click on `VBoxVideo.config`, the _Configure_ App will open and a message will inform you of the correct installation
+6. Rhapsody may ask for the root user credentials to perform some operations
+7. The _Configure_ App will suggest to use the newly added driver, to avoid conflict with the existing video driver click _Cancel_
+8. Click on the _Video_ icon and delete the currently installed driver by clicking the _Remove_ button
+9. Click on the _Add_ button, the _Configure_ App should suggest the installation of the _VirtualBox Video Adapter_ driver, click _Add_
+10. You can select the preferred video mode by clicking the _Select..._ button
+11. Once completed, click _Done_ then _Save_. Close the _Confgiure_ App by clicking on _Quit_
+12. Remove the CD-ROM by selecting _Tools_ -> _Eject_ in the _Workspace Manager_ menu
+13. Restart the operating system
 
 ### Rhapsody Developer Release 2 - Operating System Setup
 
