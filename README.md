@@ -14,7 +14,7 @@ The driver has been built in NEXTSTEP 3.3 using the Driver Kit version 4.5.
 
 In _Project Builder_ open the file [`PB.project`](/PB.project) in the root folder, click on _Builder_ and then on _Build_. Please note that there is also a [`PB.project`](/VBoxVideo_reloc.tproj/PB.project) file in the `VBoxVideo_reloc.tproj` folder, it's a subproject and is automatically loaded by the main project.
 
-After a successfull build in the main project folder there will be the built driver: a folder named `VBoxVideo.config`.
+After a successful build in the main project folder there will be the built driver: a folder named `VBoxVideo.config`.
 
 In the `build` folder of the repository there is also the archive file [`VBoxVideo.config.tar`](/build/VBoxVideo.config.tar) which contains the driver already built.
 
