@@ -22,52 +22,62 @@ In the `build` folder of the repository there is also the archive file [`VBoxVid
 
 The following paragraphs will guide you in the process of installing the VBoxVideo driver in NEXTSTEP 3.3 and Rhapsody Developer Release 2 on VirtualBox.
 
+While the driver is the same for both the operating systems, they use a different and incompatible file system so in the `build` folder you will find a floppy image for each OS.
+
+Please note that every time you change the video mode (i.e. the resolution or the color depth) a restart of the operating system is required.
+
 ### NEXTSTEP 3.3 - Existing installation
 
 In an existing installation follow these steps:
 
-1. Mount in the virtual machine floppy the disk image file [`VBoxVideoDriver.img`](/build/VBoxVideoDriver.img) you can find in the `build` folder
+1. Mount in the virtual machine floppy the disk image file [`NEXTSTEP_VBoxVideoDriver.img`](/build/NEXTSTEP_VBoxVideoDriver.img) you can find in the `build` folder
 2. In _Workspace Manager_ menu select _Disk_ -> _Check for Disk_
 3. Double click on the Floppy named _VBoxVideo_, you can find the driver at the following path: `private\Drivers\i386`
 4. Copy the folder `VBoxVideo.config` from the floppy disk to the `me` folder
 5. Double click on `VBoxVideo.config` in the `me` folder, the _Configure_ App will open and a message will inform you of the correct installation
-6. Click on the _Video_ icon and delete the currently installed driver by clicking the _Remove_ button
-7. Click on the _Add_ button, the _Configure_ App should suggest the installation of the _VirtualBox Video Adapter_ driver, click _Add_
-8. You can select the preferred video mode by clicking the _Select..._ button
-9. Once completed, click _Done_ then _Save_
-10. Remove the floppy by selecting _Disk_ -> _Eject_ in the _Workspace Manager_ menu
-11. Restart the operating system
+6. Click on the _Monitor_ icon on top and delete the currently installed driver by clicking the _Remove_ button. This will avoid warnings on conflicting resources
+9. Click on the _Add_ button, the _Configure_ App should suggest the installation of the _VirtualBox Video Adapter_ driver, click _Add_
+10. You can select the preferred video mode by clicking the _Select..._ button, the default video mode is 1024x768 with 16M colors
+11. Once completed, click _Done_ then _Save_. Close the _Configure_ App by selecting _Quit_ in the _Configure_ menu
+12. Remove the image from the virtual floppy by selecting _Disk_ -> _Eject_ in the _Workspace Manager_ menu. Unmount the image from the virtual floppy
+13. Restart the operating system
 
 ### NEXTSTEP 3.3 - Operating System Setup
 
 During the operating system setup follow these steps:
 
-1. After installing the drivers for the CD-ROM and the Hard Drive mount in the virtual machine floppy the disk image file [`VBoxVideoDriver.img`](/build/VBoxVideoDriver.img) you can find in the `build` folder
+1. After selecting the drivers for the CD-ROM and the Hard Drive mount in the virtual machine floppy the disk image file [`NEXTSTEP_VBoxVideoDriver.img`](/build/NEXTSTEP_VBoxVideoDriver.img) you can find in the `build` folder
 2. Enter 2 to load additional drivers from a disk, enter 1 to install the _Virtual Box Video Adapter_ driver
 3. Enter 1 to continue the setup process
-4. During the installation you will be prompted two or three times to insert the disk image [`VBoxVideoDriver.img`](/build/VBoxVideoDriver.img)
+4. During the installation you will be prompted two times to insert the disk image [`NEXTSTEP_VBoxVideoDriver.img`](/build/NEXTSTEP_VBoxVideoDriver.img)
 
 ### Rhapsody Developer Release 2 - Existing installation
 
 In an existing installation follow these steps:
 
-1. Mount in the virtual machine CD driver the disk image file [`VBoxVideoDriver.iso`](/build/VBoxVideoDriver.iso) you can find in the `build` folder
-2. Double click on the CD-ROM named _VBoxVideoDriver_, you can find the driver in the root folder
-3. Copy the file `VBoxVideo.config.tar` from the CD-ROM to the user folder
-4. Double click on `VBoxVideo.config.tar` in the user folder, click _Unarchive_ to extract the folder `VBoxVideo.config` from the archive
-5. Once the unarchive operation has finished double click on `VBoxVideo.config`, the _Configure_ App will open and a message will inform you of the correct installation
-6. Rhapsody may ask for the root user credentials to perform some operations
+1. Mount in the virtual machine floppy the disk image file [`Rhapsody_VBoxVideoDriver.img`](/build/Rhapsody_VBoxVideoDriver.img) you can find in the `build` folder
+2. In _Workspace Manager_ menu select _Tools_ -> _Check for Disk_
+3. Double click on the Floppy named _VBoxVideo_, you can find the driver at the following path: `private\Drivers\i386`
+3. Copy the folder `VBoxVideo.config` from the floppy disk to the user folder
+4. Double click on `VBoxVideo.config` in the user folder, the _Configure_ App will open
+5. If you are logged in as a normal user Rhapsody will ask for the root user credentials, enter the credential and click _Login_
+6. The _Configure_ App will show a message once the driver is successfully installed, click _OK_
 7. The _Configure_ App will suggest to use the newly added driver, to avoid conflict with the existing video driver click _Cancel_
-8. Click on the _Video_ icon and delete the currently installed driver by clicking the _Remove_ button
+8. Delete the currently installed video driver by clicking the _Remove_ button
 9. Click on the _Add_ button, the _Configure_ App should suggest the installation of the _VirtualBox Video Adapter_ driver, click _Add_
-10. You can select the preferred video mode by clicking the _Select..._ button
+10. You can select the preferred video mode by clicking the _Select..._ button, the default video mode is 1024x768 with 16M colors
 11. Once completed, click _Done_ then _Save_. Close the _Configure_ App by clicking on _Quit_
-12. Remove the CD-ROM by selecting _Tools_ -> _Eject_ in the _Workspace Manager_ menu
+12. Remove the image from the virtual floppy by selecting _Tools_ -> _Eject_ in the _Workspace Manager_ menu.  Unmount the image from the virtual floppy
 13. Restart the operating system
 
 ### Rhapsody Developer Release 2 - Operating System Setup
 
-I was unable to create a valid floppy image for Rhapsody so installing the driver during the setup process isn't supported.
+During the operating system setup follow these steps:
+
+1. After selecting the drivers for the CD-ROM and the Hard Drive mount in the virtual machine floppy the disk image file [`Rhapsody_VBoxVideoDriver.img`](/build/Rhapsody_VBoxVideoDriver.img) you can find in the `build` folder
+2. Enter 2 to load additional drivers from a disk, enter 1 to install the _Virtual Box Video Adapter_ driver
+3. Enter 1 to continue the setup process
+4. During the installation you will be prompted two times to insert the disk image [`Rhapsody_VBoxVideoDriver.img`](/build/Rhapsody_VBoxVideoDriver.img)
 
 ## Supported Video Modes
 
