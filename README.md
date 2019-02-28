@@ -33,7 +33,7 @@ In an existing installation follow these steps:
 5. Double click on `VBoxVideo.config` in the `me` folder, the _Configure_ App will open and a message will inform you of the correct installation
 6. Click on the _Video_ button and delete the currently installed driver by clicking the _Remove_ button
 7. Click on the _Add_ button, the _Configure_ App should suggest the installation of the _VirtualBox Video Adapter_ driver, click _Add_
-8. You can select the desidered video mode by clicking the _Select..._ button
+8. You can select the preferred video mode by clicking the _Select..._ button
 9. Once completed, click _Done_ then _Save_
 10. Remove the floppy by selecting _Disk_ -> _Eject_ in the _Workspace Manager_ menu
 11. Restart the operating system
@@ -43,7 +43,7 @@ In an existing installation follow these steps:
 During the operating system setup follow these steps:
 
 1. After installing the drivers for the CD-ROM and the Hard Drive mount in the virtual machine floppy the disk image file [`VBoxVideoDriver.img`](/build/VBoxVideoDriver.img) you can find in the `build` folder
-2. Enter 2 to load additional drivers from a disk, enter 1 to install the _Virtaul Box Video Adapter_ driver
+2. Enter 2 to load additional drivers from a disk, enter 1 to install the _Virtual Box Video Adapter_ driver
 3. Enter 1 to continue the setup process
 4. During the installation you will be prompted two or three times to insert the disk image [`VBoxVideoDriver.img`](/build/VBoxVideoDriver.img)
 
