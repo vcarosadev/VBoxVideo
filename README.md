@@ -8,8 +8,6 @@ VBoxVideo is a video driver for **Oracle VirtualBox** virtual machines with **NE
 
 The driver has been tested on VirtualBox Version 5 on a Windows 7 host and VirtualBox Version 6 on a Windows 10 host with both NEXTSTEP 3.3 and Rhapsody Developer Release 2.
 
-For more details about these operating systems and the implementation of the video driver please refer to the wiki page.
-
 ## Building the driver
 
 The driver has been built in NEXTSTEP 3.3 using the Driver Kit version 4.5.
@@ -30,7 +28,7 @@ In an existing installation follow these steps:
 
 1. Mount in the virtual machine floppy the disk image file [`VBoxVideoDriver.img`](/build/VBoxVideoDriver.img) you can find in the `build` folder
 2. In _Workspace Manager_ menu select _Disk_ -> _Check for Disk_
-3. Double click on the Floppy named _VBoxVideoDriver_, you can find the driver at the following path: `private\Drivers\i386`
+3. Double click on the Floppy named _VBoxVideo_, you can find the driver at the following path: `private\Drivers\i386`
 4. Copy the folder `VBoxVideo.config` from the floppy disk to the `me` folder
 5. Double click on `VBoxVideo.config` in the `me` folder, the _Configure_ App will open and a message will inform you of the correct installation
 6. Click on the _Video_ button and delete the currently installed driver by clicking the _Remove_ button
@@ -42,31 +40,31 @@ In an existing installation follow these steps:
 
 ### NEXTSTEP 3.3 - Operating System Setup
 
-During the opeating system setup follow this step:
+During the operating system setup follow these steps:
 
 1. After installing the drivers for the CD-ROM and the Hard Drive mount in the virtual machine floppy the disk image file [`VBoxVideoDriver.img`](/build/VBoxVideoDriver.img) you can find in the `build` folder
 2. Enter 2 to load additional drivers from a disk, enter 1 to install the _Virtaul Box Video Adapter_ driver
 3. Enter 1 to continue the setup process
 4. During the installation you will be prompted two or three times to insert the disk image [`VBoxVideoDriver.img`](/build/VBoxVideoDriver.img)
 
-### Rhapsdoy Developer Release 2 - Existing installation
+### Rhapsody Developer Release 2 - Existing installation
 
-In an existing installation follow this steps:
+In an existing installation follow these steps:
 
-1. Mount in the virtual machine CD driver the disk image file `VBoxVideoDriver.iso`](/build/VBoxVideoDriver.iso) you can find in the `build` folder
+1. Mount in the virtual machine CD driver the disk image file [`VBoxVideoDriver.iso`](/build/VBoxVideoDriver.iso) you can find in the `build` folder
 2. Double click on the CD-ROM named _VBoxVideoDriver_, you can find the driver in the root folder
 3. Copy the folder `VBoxVideo.config` from the CD-ROM to the user folder
 4. Double click on `VBoxVideo.config` in the user folder, the _Configure_ App will open and a message will inform you of the correct installation
 5. Click on the _Video_ button and delete the currently installed driver by clicking the _Remove_ button
 6. Click on the _Add_ button, the _Configure_ App should suggest the installation of the _VirtualBox Video Adapter_ driver, click _Add_
-7. You can select the desidered video mode by clicking the _Select..._ button
+7. You can select the preferred video mode by clicking the _Select..._ button
 8. Once completed, click _Done_ then _Save_
 9. Remove the CD-ROM by selecting _Tools_ -> _Eject_ in the _Workspace Manager_ menu
 10. Restart the operating system
 
-### Rhapsdoy Developer Release 2 - Operating System Setup
+### Rhapsody Developer Release 2 - Operating System Setup
 
-I was unable to create a valid floppy image for Rhapsody so insalling the driver during the setup process isn't supported.
+I was unable to create a valid floppy image for Rhapsody so installing the driver during the setup process isn't supported.
 
 ## Supported Video Modes
 
